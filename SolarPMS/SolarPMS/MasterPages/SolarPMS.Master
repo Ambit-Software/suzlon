@@ -1,0 +1,310 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SolarPMS.master.cs" Inherits="SolarPMS.MasterPages.SolarPMS" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
+
+    <style>
+        /*.modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: 99;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            min-height: 100%;
+            width: 100%;
+        }*/
+
+        .loading {
+            width: 100%;
+            height: 100%;
+            top: 40%;
+            left: 0;
+            position: fixed;
+            display: block;
+            z-index: 9999;
+            background-color: transparent;
+            background-image: url('Content/images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <%-- <link href="<%=SolarPMS.Models.Constants.ApplicationPath %>/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%=SolarPMS.Models.Constants.ApplicationPath %>/Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="<%=SolarPMS.Models.Constants.ApplicationPath %>/Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="<%=SolarPMS.Models.Constants.ApplicationPath%>/Scripts/jquery.min.js"></script>
+        <script src="<%=SolarPMS.Models.Constants.ApplicationPath%>/Scripts/bootstrap.min.js"></script>--%>
+
+        <link href="../Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="../Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="../Scripts/jquery.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+    </telerik:RadCodeBlock>
+
+    <title>Solar PMS</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server" style="min-height: 95vh !important;">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>
+        <%--<telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="true" />--%>
+
+        <!-- new Code for navigation-->
+        <div class="container-fluid padding-0">
+            <div class="col-xs-12 padding-0">
+                <div class="col-xs-6 padding-0">
+                    <img src="../Content/images/suzlon_logo.png" class="img-responsive padding-10">
+                </div>
+                <div class="col-xs-6 padding-0">
+                    <img src="../Content/images/solar-pms-logo.png" class="img-responsive pull-right padding-10">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid padding-0">
+
+
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li runat="server"><a href="../WelcomeScreen.aspx">Welcome</a></li>
+                        <li runat="server" id="menuToDoTask"><a href="../ToDoList.aspx">To Do Task</a></li>
+                        <li runat="server" id="menuDesignDocumentUpload"><a href="../DesignDocumentUpload.aspx">Design and Engineer Documents</a></li>
+                        <li runat="server" id="menuIssueManagement"><a href="../IssueManagementList.aspx">Issue Management</a></li>
+                        <li id="menuUserManagement" runat="server" class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration &nbsp; <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu ">
+                                <li>
+                                    <ul>
+                                        <li><a href="../Admin/UserMaster.aspx">User Details</a></li>
+                                        <li><a href="../TaskAllocation.aspx">Allocate Task</a></li>
+                                        <li><a href="../TaskAllocationDetails.aspx">Allocate Task Details</a></li>
+                                        <li><a href="../Admin/SurveyMaster.aspx">Survey Master</a></li>
+                                        <li><a href="../Admin/TableMaster.aspx">Table Master</a></li>
+                                        <li><a href="../Admin/VillageMaster.aspx">Village Master</a></li>
+                                        <li><a href="../Admin/LocationMaster.aspx">Location Master</a></li>
+                                        <li><a href="../Admin/ProfileMaster.aspx">Profile Master</a></li>
+                                        <li><a href="../Admin/IssueCategoryMaster.aspx">Issue Category</a></li>
+                                        <%-- <li><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/Admin/EscalationMatrics.aspx">Escalation Matrix</a></li>--%>
+                                        <li><a href="../Admin/TableActivity.aspx">Table Activity</a></li>
+                                        <li><a href="../Admin/ManpowerMaster.aspx">Man Power</a></li>
+                                        <li><a href="../Admin/MaterialMaster.aspx">Material Master</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li runat="server" id="menuContractManagement"><a href="../ContractorManagement.aspx">Contractor Management</a></li>
+                        <li id="menuDashboard" runat="server" class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports&nbsp; <span class="caret"></span></a>
+                            <ul class="dropdown-menu mega-dropdown-menu ">
+                                <li>
+                                    <ul runat="server" id="reportList">
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li class="dropdown mega-dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>
+                                    <img runat="server" id="impProfile" src="~/Content/images/profile.jpg" class="user-img img-circle">
+                                </span>
+                                <asp:Label runat="server" ID="lblUserName"></asp:Label>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu mega-dropdown-menu ">
+
+                                <li>
+                                    <ul class="pull-right">
+                                        <li><a href="../ChangePassword.aspx">Change Password</a></li>
+                                        <li>
+                                            <asp:LinkButton runat="server" ID="LinkButton1" OnClick="lnlLogout_Click" Text="Logout" CausesValidation="false"></asp:LinkButton></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.nav-collapse -->
+            </nav>
+        </div>
+
+        <!-- new Code for navigation-->
+
+        <!-- old code for navigation-->
+        <%--<nav class="navbar navbar-default nav-bar-clr">
+            <div class="container-fluid">
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">
+                        <img src="<%=SolarPMS.Models.Constants.ApplicationPath%>/Content/images/logo.png" class="img-responsive" />
+                    </a>
+                </div>
+
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li id="menuDashboard" runat="server"><a href="#"><span class="glyphicon glyphicon-dashboard"></span>&nbsp; Dashboard</a></li>
+                        <li runat="server" id="menuToDoTask"><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/ToDoList.aspx"><span class="glyphicon glyphicon-tasks"></span>&nbsp;To Do Task</a></li>
+                        <li runat="server" id="menuIssueManagement"><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/IssueManagementList.aspx"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;Issue Management</a></li>
+                        <li class="dropdown" id="menuUserManagement" runat="server">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;User Management <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/Admin/UserMaster.aspx">User Details</a></li>
+                                <li><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/TaskAllocation.aspx">Allocate Task </a></li>
+                                 <li><a href="<%=SolarPMS.Models.Constants.ApplicationPath%>/TaskAllocationDetails.aspx">Allocate Task Details</a></li>                             
+                                <li><a href="<%=ApplicationPath%>/Admin/SurveyMaster.aspx">Survey Master</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/TableMaster.aspx">Table Master</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/VillageMaster.aspx">Village Master</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/LocationMaster.aspx">Location Master</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/ProfileMaster.aspx">Profile Master</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/IssueCategoryMaster.aspx">Issue Category</a></li>
+                                <li><a href="<%=ApplicationPath%>/Admin/EscalationMatrics.aspx">Escalation Matrix</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span></a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="">
+                                <img src="<%=ApplicationPath%>/Content/images/profile.jpg" class="user-img img-circle" /></span>
+                                <asp:Label runat="server" ID="lblUserName"></asp:Label><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%=ApplicationPath%>/ChangePassword.aspx">Change Password</a></li>
+                                <li>
+                                    <asp:LinkButton runat="server" ID="LinkButton1" OnClick="lnlLogout_Click" Text="Logout" CausesValidation="false"></asp:LinkButton></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </nav>--%>
+
+        <asp:UpdatePanel runat="server" ChildrenAsTriggers="true" UpdateMode="Always">
+            <ContentTemplate>
+                <asp:UpdateProgress runat="server">
+                    <ProgressTemplate>
+                        <div class="loading" align="center">
+                            Loading. Please wait.<br />
+                            <br />
+                            <img height="50" style="width: 50px; height: 50px; background-position: center !important; background-repeat: no-repeat !important;"
+                                width="50" src="../Content/images/loading.gif" alt="" />
+                        </div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <%--<div style="padding: 10px; margin-top: 50px;"></div>
+            <asp:UpdateProgress runat="server">
+            <ProgressTemplate>
+                <div class="loading" align="center">
+                    <p class="text-center">Loading. Please wait.</p>
+                    <center>
+                    <img height="50" style="width: 50px; height: 50px; background-position:center !important; background-repeat:no-repeat !important;" width="50" src="<%=SolarPMS.Models.Constants.ApplicationPath%>/Content/images/loading.gif" alt="" />
+                    </center>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>--%>
+        </asp:ContentPlaceHolder>
+
+
+    </form>
+    <div class="footer padding-tb-10">
+        <p class="text-center margin-0 heading">Suzlon Project Management Application &copy; 2016, All Rights Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        //function ShowProgress() {
+        //    setTimeout(function () {
+        //        var modal = $('<div />');
+        //        modal.addClass("modal");
+        //        $('body').append(modal);
+        //        var loading = $(".loading");
+        //        loading.show();
+        //        loading.addClass("show");;
+        //        var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+        //        var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+        //        loading.css({ top: top, left: left });
+        //    }, 200);
+        //}
+        //$('form').bind("submit", function () {
+        //    ShowProgress();
+        //});
+
+    </script>
+
+    <!-- Script for nav menu clickable event-->
+    <script>
+        jQuery(document).on('click', '.mega-dropdown', function (e) {
+            e.stopPropagation()
+        })
+    </script>
+    <!-- End of script for nav menu clickable event-->
+
+    <!-- Script for nav menu hover event-->
+    <!--
+    <script>
+        $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+    </script>
+-->
+    <!-- End of script for nav menu hover event-->
+</body>
+</html>

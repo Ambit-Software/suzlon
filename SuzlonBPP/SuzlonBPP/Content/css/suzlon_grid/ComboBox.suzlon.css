@@ -1,0 +1,91 @@
+.RadComboBox{
+    width:100% !important;
+    line-height: 23px !important;
+}
+
+.RadComboBox_Default,.RadComboBox_Default .rcbInner {
+  border-color: #ccc !important;
+color: #333333 !important;
+background-color: #FFF !important;
+background-image: none !important;
+border-radius: 0px 3px 3px 0px !important;
+}
+
+.RadComboBox_Default,.RadComboBox_Default .rcbEmptyMessage {
+  filter: alpha(opacity=100) !important;
+  opacity: 1 !important }
+
+.RadComboBox_Default,.RadComboBox_Default .rcbActionButton {
+ border-radius: 0 3px 3px 0 !important;
+border-color: #CCC !important;
+color: #333333 !important;
+background-color: #ccc !important;
+background-image: none !important; }
+
+.RadComboBox_Default,.RadComboBox_Default .rcbHovered, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbLoading, .RadComboBoxDropDown_Default .RadComboBox_Default .rcbLoading, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbItem em, .RadComboBoxDropDown_Default .rcbItem .RadComboBox_Default em {
+  border-color: #ccc !important;
+color: #333333 !important;
+background-color: #FFF !important;
+background-image: none !important; }
+
+.RadComboBox_Default,.RadComboBox_Default .rcbHovered .rcbActionButton, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbLoading .rcbActionButton, .RadComboBoxDropDown_Default .RadComboBox_Default .rcbLoading .rcbActionButton, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbItem em .rcbActionButton, .RadComboBoxDropDown_Default .rcbItem .RadComboBox_Default em .rcbActionButton {
+  border-color: #CCC !important;
+color: #333 !important;
+background-color: #CCC !important;
+background-image: none !important; }
+
+.RadComboBox_Default,.RadComboBox_Default .rcbFocused {
+  border-color: #CCC !important;
+  color: #333333 !important;
+  background-color: #FFF !important; }
+
+.RadComboBox_Default.RadComboBox_Default .rcbFocused .rcbActionButton {
+  border-color: #CCC !important;
+  color: #333333 !important;
+  background-color: #FFF !important;
+  background-image: none !important; }
+
+.RadComboBox_Default,.RadComboBox_Default .rcbReadOnly {
+  border-color: #ccc !important;
+  color: #333333 !important;
+  background-color: #FFF !important;
+  background-image: none !important; }
+.RadComboBox_Default,  .RadComboBox_Default .rcbReadOnly.rcbHovered, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbReadOnly.rcbLoading, .RadComboBoxDropDown_Default .RadComboBox_Default .rcbReadOnly.rcbLoading, .RadComboBox_Default .RadComboBoxDropDown_Default .rcbItem em.rcbReadOnly, .RadComboBoxDropDown_Default .rcbItem .RadComboBox_Default em.rcbReadOnly {
+    border-color: #ccc !important;
+    color: #333333 !important;
+    background-color: #FFF !important;
+    background-image: none !important; }
+  .RadComboBox_Default,.RadComboBox_Default .rcbReadOnly.rcbFocused {
+    border-color: #CCC !important;
+    color: #333333 !important;
+    background-color: #FFF !important;
+    background-image: none !important; }
+
+.RadComboBox_Default,.RadComboBox_suzlon_rtl .rcbActionButton {
+  border-radius: 3px 0 0 3px !important; }
+
+.RadComboBox_Default,.RadComboBoxDropDown_suzlon {
+  border-color: #828282 !important;
+  color: #333333 !important;
+  background-color: #FFF !important; }
+  .RadComboBox_Default,.RadComboBoxDropDown_suzlon .rcbHeader,
+  .RadComboBox_Default,.RadComboBoxDropDown_suzlon .rcbFooter, .RadComboBoxDropDown_suzlon .rcbCheckAllItems, .RadComboBoxDropDown_suzlon .rcbMoreResults {
+    border-color: #cc9a00 !important;
+    color: #333333 !important;
+    background-color: #FFF !important; }
+  .RadComboBox_Default,.RadComboBoxDropDown_suzlon .rcbHovered, .RadComboBoxDropDown_suzlon .rcbLoading, .RadComboBoxDropDown_suzlon .rcbItem em {
+    color: #333333 !important;
+    background-color: #FFF !important; }
+  .RadComboBox_Default,.RadComboBoxDropDown_suzlon .rcbSelected {
+    color: #333333 !important;
+    background-color: #FFF !important; }
+  .RadComboBoxDropDown .rcbList{
+      background-color: #f8f8f8;
+  }
+  .RadComboBoxDropDown_Default .rcbHovered{
+      color: #333333 !important;
+    background-color: #FFF !important;
+  }
+  RadComboBox_Default .rcbReadOnly .rcbHovered{
+      color:#333333 !important;
+  }

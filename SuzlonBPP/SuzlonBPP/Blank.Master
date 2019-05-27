@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blank.master.cs" Inherits="SuzlonBPP.Blank" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <title>Solar BPP</title>
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+       <%-- <link href="<%=applicationPath%>/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%=applicationPath%>/Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="<%=applicationPath%>/Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="<%=applicationPath%>/Scripts/jquery.min.js"></script>
+        <script src="<%=applicationPath%>/Scripts/bootstrap.min.js"></script>--%>
+
+         <link href="Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="Scripts/jquery.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+    </telerik:RadCodeBlock>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+            </telerik:RadScriptManager>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

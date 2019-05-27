@@ -1,0 +1,1233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF4103DB-5496-42FA-8BA2-71CDE96513EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolarPMS</RootNamespace>
+    <AssemblyName>SolarPMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="App_Code.aottoroz">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\bd8d4e3e\_shadow\5413d0fd\9352\App_Code.aottoroz.dll</HintPath>
+    </Reference>
+    <Reference Include="Cryptography">
+      <HintPath>..\packages\Cryprography\Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Cors, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SAP.Connector">
+      <HintPath>..\packages\SAPIntegration\SAP.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="SAP.Connector.Rfc">
+      <HintPath>..\packages\SAPIntegration\SAP.Connector.Rfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Solar_SAP">
+      <HintPath>..\packages\SAPIntegration\Solar_SAP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Design, Version=2016.2.504.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Telerik\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection, Version=2016.2.504.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Telerik\Telerik.Web.Device.Detection.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2016.2.504.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Telerik\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2016.2.504.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Telerik\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddManpowerDetails.aspx.cs">
+      <DependentUpon>AddManpowerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddManpowerDetails.aspx.designer.cs">
+      <DependentUpon>AddManpowerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EscalationMatrics.aspx.cs">
+      <DependentUpon>EscalationMatrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EscalationMatrics.aspx.designer.cs">
+      <DependentUpon>EscalationMatrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IssueCategoryMaster.aspx.cs">
+      <DependentUpon>IssueCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IssueCategoryMaster.aspx.designer.cs">
+      <DependentUpon>IssueCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LocationMaster.aspx.cs">
+      <DependentUpon>LocationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LocationMaster.aspx.designer.cs">
+      <DependentUpon>LocationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManpowerMaster.aspx.cs">
+      <DependentUpon>ManpowerMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManpowerMaster.aspx.designer.cs">
+      <DependentUpon>ManpowerMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Profile.cs" />
+    <Compile Include="Admin\ProfileMaster.aspx.cs">
+      <DependentUpon>ProfileMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProfileMaster.aspx.designer.cs">
+      <DependentUpon>ProfileMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SurveyMaster.aspx.cs">
+      <DependentUpon>SurveyMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SurveyMaster.aspx.designer.cs">
+      <DependentUpon>SurveyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableActivity.aspx.cs">
+      <DependentUpon>TableActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableActivity.aspx.designer.cs">
+      <DependentUpon>TableActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableActivityBlock.aspx.cs">
+      <DependentUpon>TableActivityBlock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableActivityBlock.aspx.designer.cs">
+      <DependentUpon>TableActivityBlock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableActivityInvertor.aspx.cs">
+      <DependentUpon>TableActivityInvertor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableActivityInvertor.aspx.designer.cs">
+      <DependentUpon>TableActivityInvertor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableActivitySCB.aspx.cs">
+      <DependentUpon>TableActivitySCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableActivitySCB.aspx.designer.cs">
+      <DependentUpon>TableActivitySCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableActivityTable.aspx.cs">
+      <DependentUpon>TableActivityTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableActivityTable.aspx.designer.cs">
+      <DependentUpon>TableActivityTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TableMaster.aspx.cs">
+      <DependentUpon>TableMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TableMaster.aspx.designer.cs">
+      <DependentUpon>TableMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TestUpload.aspx.cs">
+      <DependentUpon>TestUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TestUpload.aspx.designer.cs">
+      <DependentUpon>TestUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserDetail.aspx.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserDetail.aspx.designer.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserMaster.aspx.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserMaster.aspx.designer.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VillageMaster.aspx.cs">
+      <DependentUpon>VillageMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VillageMaster.aspx.designer.cs">
+      <DependentUpon>VillageMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\ReportCredentials.cs" />
+    <Compile Include="ContractorManagement.aspx.cs">
+      <DependentUpon>ContractorManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractorManagement.aspx.designer.cs">
+      <DependentUpon>ContractorManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ManPowerController.cs" />
+    <Compile Include="Controllers\MasterDataController.cs" />
+    <Compile Include="Controllers\MaterialController.cs" />
+    <Compile Include="DesignDocumentUpload.aspx.cs">
+      <DependentUpon>DesignDocumentUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignDocumentUpload.aspx.designer.cs">
+      <DependentUpon>DesignDocumentUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MaterialMaster.aspx.cs">
+      <DependentUpon>MaterialMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MaterialMaster.aspx.designer.cs">
+      <DependentUpon>MaterialMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContractorLaborDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEDocumentFile.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DesignEnggActivityDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DesignEngineerDocument.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DesignEngineerDocuments.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DocumentReviewDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DocumentReviewFile.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LocationMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManagerTimesheetActivity.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManagerTimesheetBlockDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManagerTimesheetSurveyDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManPowerDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManPowerMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManPowerMasterDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManPowerModel.cs" />
+    <Compile Include="Models\MasterDataModel.cs" />
+    <Compile Include="Models\Material.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MaterialMasterModel.cs" />
+    <Compile Include="Models\MaterialStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MobileDashbaord.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OfflineManPowerDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OfflineTimesheet.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProfileMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TableMasterData.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Timesheet.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserAssignedTaskDataNonDE.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetContractorForOfflineSync_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetContractorLaborDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetContractorLaborDetails_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetDesignEnggActivityDetails_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetDesignEngineerDocuments_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetInvalidOfflineTimesheet_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetManPowerMasterDetails_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetMaterialReportData_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetSurveyDataForOfflineSync_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTableActivityDataForOfflineSync_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTableMasterDataForOfflineSync_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetUpdatedTablesForOfflineSync_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetUserAssignedTaskDataNonDE_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_SyncMasterDataForManPowerOffline_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportList.aspx.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportList.aspx.designer.cs">
+      <DependentUpon>ReportList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadDEDocument.aspx.cs">
+      <DependentUpon>UploadDEDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadDEDocument.aspx.designer.cs">
+      <DependentUpon>UploadDEDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreen.aspx.cs">
+      <DependentUpon>WelcomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.aspx.designer.cs">
+      <DependentUpon>WelcomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="AssignedHistory.aspx.cs">
+      <DependentUpon>AssignedHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignedHistory.aspx.designer.cs">
+      <DependentUpon>AssignedHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ActivityController.cs" />
+    <Compile Include="Controllers\BaseApiController.cs" />
+    <Compile Include="Controllers\ErrorLogController.cs" />
+    <Compile Include="Controllers\EscalationMatrixController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\IssueCategoryController.cs" />
+    <Compile Include="Controllers\IssueMgmtController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\NetworkController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\SubActivityController.cs" />
+    <Compile Include="Controllers\SurveyController.cs" />
+    <Compile Include="Controllers\TableActivityController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
+    <Compile Include="Controllers\TaskController.cs" />
+    <Compile Include="Controllers\TimesheetApprovalController.cs" />
+    <Compile Include="Controllers\TimesheetController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VillageController.cs" />
+    <Compile Include="Filters\ExceptionHandlingFilter.cs" />
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IssueManagementDetail.aspx.cs">
+      <DependentUpon>IssueManagementDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueManagementDetail.aspx.designer.cs">
+      <DependentUpon>IssueManagementDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueManagementList.aspx.cs">
+      <DependentUpon>IssueManagementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueManagementList.aspx.designer.cs">
+      <DependentUpon>IssueManagementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\BlankMaster.Master.cs">
+      <DependentUpon>BlankMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\BlankMaster.Master.designer.cs">
+      <DependentUpon>BlankMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\SolarPMS.Master.cs">
+      <DependentUpon>SolarPMS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\SolarPMS.Master.designer.cs">
+      <DependentUpon>SolarPMS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Activity.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ActivityAllocationDetailsForNotification.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ActivityAssignmentHistory.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ActivityModel.cs" />
+    <Compile Include="Models\ActivityToSendNotification.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Activity_temp.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Area.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\area_temp.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CommonFunctions.cs" />
+    <Compile Include="Models\Constants.cs" />
+    <Compile Include="Models\EmailAddressHelper.cs" />
+    <Compile Include="Models\ErroLog.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EscalationMatrix.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EscalationMatrixModel.cs" />
+    <Compile Include="Models\GetActivity_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetSubActivity_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetToDoNetWorkList_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetUserForCopy.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IssueAttachment.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueCategory.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueCategoryModel.cs" />
+    <Compile Include="Models\IssueCategoryStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueComment.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueManagement.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueManagementAudit.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IssueMgmtModel.cs" />
+    <Compile Include="Models\LocatioMasterStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LocationModel.cs" />
+    <Compile Include="Models\Menu.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MenuAccess.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NetWork.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NetworkModel.cs" />
+    <Compile Include="Models\NetWork_temp.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NotificationHelper.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="Models\ProfileModel.cs" />
+    <Compile Include="Models\Report.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportParameter.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportsModel.cs" />
+    <Compile Include="Models\SAPActivitiesNotAllocated.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SAPHelper.cs" />
+    <Compile Include="Models\SAPMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SAPMasterStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SAPMASTER_BK_15July.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SolarPMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolarPMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SolarPMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SolarPMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolarPMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatusMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SubActivity.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SubActivityModel.cs" />
+    <Compile Include="Models\subactivity_temp.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SubmiitedTimesheetAttachment.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SubmittedTimesheetDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SurveyMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SurveyMasterStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SurveyModel.cs" />
+    <Compile Include="Models\TableActivity.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TableActivityModel.cs" />
+    <Compile Include="Models\TableMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TableMasterStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TableModel.cs" />
+    <Compile Include="Models\TaskAllocation.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaskAllocationMasterData.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaskAllocation_temp.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="Models\TimesheetActivity.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetActivityDetails.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetApproval.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetApprovalModel.cs" />
+    <Compile Include="Models\TimesheetAttachment.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetBlockDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetBlockDetailsView.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimesheetModel.cs" />
+    <Compile Include="Models\TimesheetSurveyDetail.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToDoList.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToDoListApproved.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToDoListPendingForApproval.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ToDoListRejected.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserAssignedTaskDataForDropdown.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserForCopy.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\usp_GetActivityToSendNotification_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetSubmiitedTimesheetAttachment_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetSubmittedTimesheetDetails_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTaskAllocationData_Manish_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTaskAllocationData_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTimesheetActivityDetails1_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetTimesheetBlockDetails_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetToDoList_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_GetUserForCopy_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_SAPActivitiesNotAllocated_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_SaveAllActivityInNetwork_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListApproved_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListApproved_Result1.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListMyRecords_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListMyRecords_Result1.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListPendingForApproval_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListPendingForApproval_Result1.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListRejected_Result.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usp_ToDoListRejected_Result1.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Utility.cs" />
+    <Compile Include="Models\VillageMaster.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VillageMasterStaging.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VillageModel.cs" />
+    <Compile Include="Models\WBSArea.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WorkflowStatu.cs">
+      <DependentUpon>SolarPMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="TaskAllocation.aspx.cs">
+      <DependentUpon>TaskAllocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskAllocation.aspx.designer.cs">
+      <DependentUpon>TaskAllocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetManagement.aspx.cs">
+      <DependentUpon>TimesheetManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimesheetManagement.aspx.designer.cs">
+      <DependentUpon>TimesheetManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToDoList.aspx.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToDoList.aspx.designer.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webNoAccess.aspx.cs">
+      <DependentUpon>webNoAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webNoAccess.aspx.designer.cs">
+      <DependentUpon>webNoAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskAllocationDetails.aspx.cs">
+      <DependentUpon>TaskAllocationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskAllocationDetails.aspx.designer.cs">
+      <DependentUpon>TaskAllocationDetails.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AddManpowerDetails.aspx" />
+    <Content Include="Admin\ManpowerMaster.aspx" />
+    <Content Include="Content\images\BG-suzlon.jpg" />
+    <Content Include="Content\images\suzlon-logo-welcome.png" />
+    <Content Include="ContractorManagement.aspx" />
+    <Content Include="DesignDocumentUpload.aspx" />
+    <Content Include="Admin\MaterialMaster.aspx" />
+    <Content Include="ReportList.aspx" />
+    <Content Include="UploadDEDocument.aspx" />
+    <Content Include="WelcomeScreen.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\EscalationMatrics.aspx" />
+    <Content Include="Admin\IssueCategoryMaster.aspx" />
+    <Content Include="Admin\LocationMaster.aspx" />
+    <Content Include="Admin\ProfileMaster.aspx" />
+    <Content Include="Admin\SurveyMaster.aspx" />
+    <Content Include="Admin\TableActivity.aspx" />
+    <Content Include="Admin\TableActivityBlock.aspx" />
+    <Content Include="Admin\TableActivityInvertor.aspx" />
+    <Content Include="Admin\TableActivitySCB.aspx" />
+    <Content Include="Admin\TableActivityTable.aspx" />
+    <Content Include="Admin\TableMaster.aspx" />
+    <Content Include="Admin\TestUpload.aspx" />
+    <Content Include="Admin\UserDetail.aspx" />
+    <Content Include="Admin\UserDetails.aspx" />
+    <Content Include="Admin\UserMaster.aspx" />
+    <Content Include="Admin\VillageMaster.aspx" />
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="AssignedHistory.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\css\global.css" />
+    <Content Include="Content\css\jquery.dataTables.min.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Button.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Calendar.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\ComboBox.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\DataForm.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\DataPager.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\DropDownList.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Filter.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Grid.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Input.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\ListBox.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\Menu.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\ScssPrimitives.json" />
+    <Content Include="Content\css\suzlon_grid\TreeList.suzlon.css" />
+    <Content Include="Content\css\suzlon_grid\UsedControls.json" />
+    <Content Include="Content\fonts\font-awesome.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\calendar-icon.png" />
+    <Content Include="Content\images\import.png" />
+    <Content Include="Content\images\issue_mgmt.png" />
+    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\login_bg.jpg" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logout.png" />
+    <Content Include="Content\images\my_dashboard.png" />
+    <Content Include="Content\images\my_profile.png" />
+    <Content Include="Content\images\notification.png" />
+    <Content Include="Content\images\placeholder-icon.png" />
+    <Content Include="Content\images\profile.jpg" />
+    <Content Include="Content\images\solar-pms-logo.png" />
+    <Content Include="Content\images\suzlon_logo.png" />
+    <Content Include="Content\images\to_do_task.png" />
+    <Content Include="Content\images\upload.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="IssueManagementDetail.aspx" />
+    <Content Include="IssueManagementList.aspx" />
+    <Content Include="JS\UserMaster.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Models\SolarPMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SolarPMS.edmx</DependentUpon>
+      <LastGenOutput>SolarPMS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\SolarPMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SolarPMS.edmx</DependentUpon>
+      <LastGenOutput>SolarPMS.cs</LastGenOutput>
+    </Content>
+    <Content Include="Profile\Gaurang.jpg" />
+    <Content Include="Profile\Penguins.jpg" />
+    <Content Include="Profile\placeholder-icon.png" />
+    <Content Include="Profile\San Thakur.jpg" />
+    <Content Include="Profile\Santosh.jpg" />
+    <Content Include="Profile\Tulips.jpg" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="TimesheetManagement.aspx" />
+    <Content Include="ToDoList.aspx" />
+    <Content Include="webNoAccess.aspx" />
+    <Content Include="MasterPages\SolarPMS.Master" />
+    <Content Include="Content\css\bootstrap-theme.css.map" />
+    <Content Include="Content\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Data\RadUploadTemp\RadUploadTestFile" />
+    <EntityDeploy Include="Models\SolarPMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SolarPMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\SolarPMS.edmx.diagram">
+      <DependentUpon>SolarPMS.edmx</DependentUpon>
+    </Content>
+    <Content Include="MasterPages\BlankMaster.Master" />
+    <Fakes Include="Fakes\Microsoft.ReportViewer.WebForms.fakes" />
+    <None Include="Properties\PublishProfiles\SuzlonLocal.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Page\Common.js" />
+    <Content Include="Scripts\Page\SurveyMaster.js" />
+    <Content Include="Scripts\Page\UserMaster.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="TaskAllocation.aspx" />
+    <Content Include="TaskAllocationDetails.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Upload\Location\Survey Master.xlsx" />
+    <Content Include="Upload\Location\Table.xlsx" />
+    <Content Include="Upload\Location\Test.xlsx" />
+    <Content Include="Upload\Location\Test1.xls" />
+    <Content Include="Upload\Location\Upload.xls" />
+    <Content Include="Upload\Survey\Survey Master.xlsx" />
+    <Content Include="Upload\Table\Table.xlsx" />
+    <Content Include="Upload\Village\Village.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Providers\" />
+    <Folder Include="Upload\Attachment\Timesheet\" />
+    <Folder Include="Upload\DEDocumentTemp\" />
+    <Folder Include="Upload\DEDocument\" />
+    <Folder Include="Upload\IssueCategory\" />
+    <Folder Include="Upload\TableActivity\Block\" />
+    <Folder Include="Upload\TableActivity\Invertor\" />
+    <Folder Include="Upload\TableActivity\SCB\" />
+    <Folder Include="Upload\TableActivity\Table\" />
+    <Folder Include="Upload\Timesheet\" />
+    <Folder Include="Views\Common\" />
+    <Folder Include="Views\ManPower\" />
+    <Folder Include="Views\Material\" />
+    <Folder Include="Views\Network\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37606</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:37606/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

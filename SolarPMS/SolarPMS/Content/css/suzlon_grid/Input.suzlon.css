@@ -1,0 +1,75 @@
+.RadInput_suzlon,
+.RadInputMgr_suzlon {
+  font: 14px "Segoe UI", Arial, Helvetica, sans-serif; }
+
+.RadInput_suzlon .riTextBox,
+.RadInputMgr_suzlon {
+  border-color: #ffd198;
+  background: #fff4e7;
+  color: #333333; }
+
+.RadInput_suzlon .riEmpty,
+.RadInput_Empty_suzlon {
+  color: #333333; }
+
+.RadInput_suzlon .riHover,
+.RadInput_Hover_Default {
+  border-color: #317c7c;
+  color: #333333; }
+
+.RadInput_suzlon .riFocused,
+.RadInput_Focused_suzlon {
+  border-color: #d86313;
+  color: #333333; }
+
+.RadInput_suzlon .riRead,
+.RadInput_Read_suzlon {
+  border-color: #d0d0d0; }
+
+.RadInput_suzlon .riDisabled,
+.RadInput_Disabled_suzlon {
+  opacity: .7;
+  cursor: default;
+  color: #333333; }
+
+.RadInput_suzlon .riError,
+.RadInput_Error_suzlon,
+.RadForm.rfdTextbox .RadInput_suzlon .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_Default[type="text"] {
+  border-color: #d51923;
+  background: white 100% -298px no-repeat url("images/Input/sprite.gif");
+  color: #d51923; }
+
+.RadInput_suzlon .riNegative,
+.RadInput_Negative_Default {
+  color: #565656; }
+
+.RadInput_suzlon a {
+  background-color: #ffe8cb;
+  background-image: linear-gradient(#fffffe, #ffe8cb);
+  color: #333333; }
+  .RadInput_suzlon a:hover {
+    background-image: linear-gradient(#57bcbc, #40a0a0);
+    color: #333333; }
+
+.RadInput_suzlon .riButton {
+  border: 1px solid #ffd198; }
+
+.RadInput_suzlon .riLabel {
+  color: #000; }
+
+.RadInput_suzlon .riResizeIcon {
+  background: url("images/Common/radActionsSprite.png") no-repeat transparent;
+  background-position: -6.5px -966.5px;
+  margin-bottom: -1px; }
+
+.RadInputRTL_Default .riError,
+.RadInputRTL_Error_suzlon {
+  background-position: 3px -298px; }
+
+.RadInputRTL_Default .riResizeIcon {
+  background-position: -6.5px -986.5px; }
+
+.RadForm.rfdTextbox .RadInputRTL_Default .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_Default[type="text"] {
+  background-position: 3px -298px; }

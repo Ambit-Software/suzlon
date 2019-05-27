@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="841ef6b5dc0a47c8b0e139b92beaf88f" Name="Diagram1">
+        <EntityTypeShape EntityType="SolarPMSModel.Activity" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.Area" Width="1.5" PointX="7.5" PointY="20.5" />
+        <EntityTypeShape EntityType="SolarPMSModel.ErroLog" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.EscalationMatrix" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueAttachment" Width="1.5" PointX="7.5" PointY="6.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueCategory" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueComment" Width="1.5" PointX="7.5" PointY="9.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueManagement" Width="1.5" PointX="5.25" PointY="6.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueManagementAudit" Width="1.5" PointX="9.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.Menu" Width="1.5" PointX="0.75" PointY="6.125" />
+        <EntityTypeShape EntityType="SolarPMSModel.MenuAccess" Width="1.5" PointX="3" PointY="8.125" />
+        <EntityTypeShape EntityType="SolarPMSModel.NetWork" Width="1.5" PointX="9.75" PointY="20.625" />
+        <EntityTypeShape EntityType="SolarPMSModel.ProfileMaster" Width="1.5" PointX="0.75" PointY="10" />
+        <EntityTypeShape EntityType="SolarPMSModel.SAPMaster" Width="1.5" PointX="7.5" PointY="37.5" />
+        <EntityTypeShape EntityType="SolarPMSModel.SAPMasterStaging" Width="1.5" PointX="7.5" PointY="46.125" />
+        <EntityTypeShape EntityType="SolarPMSModel.StatusMaster" Width="1.5" PointX="3.75" PointY="28.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.SubActivity" Width="1.5" PointX="9.75" PointY="8.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.SurveyMaster" Width="1.5" PointX="8" PointY="1" />
+        <EntityTypeShape EntityType="SolarPMSModel.TableActivity" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.TaskAllocation" Width="1.5" PointX="5.25" PointY="20" />
+        <EntityTypeShape EntityType="SolarPMSModel.TimesheetActivity" Width="1.5" PointX="8.25" PointY="32.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.TimesheetApproval" Width="1.5" PointX="8.25" PointY="13.25" />
+        <EntityTypeShape EntityType="SolarPMSModel.TimesheetAttachment" Width="3" PointX="8.25" PointY="23.25" />
+        <EntityTypeShape EntityType="SolarPMSModel.TimesheetBlockDetail" Width="1.5" PointX="8.25" PointY="26.25" />
+        <EntityTypeShape EntityType="SolarPMSModel.TimesheetSurveyDetail" Width="1.5" PointX="8.25" PointY="29.5" />
+        <EntityTypeShape EntityType="SolarPMSModel.User" Width="1.5" PointX="3" PointY="12" />
+        <EntityTypeShape EntityType="SolarPMSModel.VillageMaster" Width="1.5" PointX="5.75" PointY="1.25" />
+        <EntityTypeShape EntityType="SolarPMSModel.WBSArea" Width="1.5" PointX="5.25" PointY="24.625" />
+        <EntityTypeShape EntityType="SolarPMSModel.WorkflowStatu" Width="1.5" PointX="6" PointY="17" />
+        <EntityTypeShape EntityType="SolarPMSModel.Activity_temp" Width="1.5" PointX="11.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.area_temp" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.IssueCategoryStaging" Width="1.5" PointX="13.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.LocatioMasterStaging" Width="1.5" PointX="13.75" PointY="7.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.NetWork_temp" Width="1.5" PointX="10.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.SAPMASTER_BK_15July" Width="1.5" PointX="13.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.subactivity_temp" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.SurveyMasterStaging" Width="1.5" PointX="15.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.TableMasterStaging" Width="1.5" PointX="15.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.TaskAllocation_temp" Width="1.5" PointX="15.75" PointY="14.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.VillageMasterStaging" Width="1.5" PointX="8.75" PointY="16.75" />
+        <AssociationConnector Association="SolarPMSModel.FK_Activity_NetWork" />
+        <AssociationConnector Association="SolarPMSModel.FK_Activity_User" />
+        <AssociationConnector Association="SolarPMSModel.FK_Activity_User1" />
+        <AssociationConnector Association="SolarPMSModel.FK_Area_TaskAllocation" />
+        <AssociationConnector Association="SolarPMSModel.FK_Area_WBSArea" />
+        <AssociationConnector Association="SolarPMSModel.FK_NetWork_Area" />
+        <AssociationConnector Association="SolarPMSModel.FK_IssueAttachement_IssueManagement" />
+        <AssociationConnector Association="SolarPMSModel.FK_IssueManagement_IssueCategory" />
+        <AssociationConnector Association="SolarPMSModel.FK_IssueComment_IssueManagement" />
+        <AssociationConnector Association="SolarPMSModel.FK_IssueManagement_User" />
+        <AssociationConnector Association="SolarPMSModel.FK_MenuAccess_Menu" />
+        <AssociationConnector Association="SolarPMSModel.FK_MenuAccess_ProfileMaster" />
+        <AssociationConnector Association="SolarPMSModel.FK_User_ProfileMaster" />
+        <AssociationConnector Association="SolarPMSModel.FK_SAPMaster_WBSArea" />
+        <AssociationConnector Association="SolarPMSModel.FK_SAPMaster_Staging_WBSArea" />
+        <AssociationConnector Association="SolarPMSModel.FK_SurveyMaster_VillageMaster" />
+        <AssociationConnector Association="SolarPMSModel.FK_TaskAllocation_TaskAllocation" />
+        <AssociationConnector Association="SolarPMSModel.FK_TaskAllocation_User" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetApproval_User2" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetApproval_WorkflowStatus" />
+        <EntityTypeShape EntityType="SolarPMSModel.ActivityAssignmentHistory" Width="1.5" PointX="13.125" PointY="20" />
+        <EntityTypeShape EntityType="SolarPMSModel.ReportParameter" Width="1.5" PointX="20.625" PointY="0.875" />
+        <EntityTypeShape EntityType="SolarPMSModel.Report" Width="1.5" PointX="18.375" PointY="0.875" />
+        <AssociationConnector Association="SolarPMSModel.FK_ReportParameters_ReportParameters" />
+        <EntityTypeShape EntityType="SolarPMSModel.TableMaster" Width="1.5" PointX="18.375" PointY="3.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.LocationMaster" Width="1.5" PointX="0.75" PointY="19" />
+        <AssociationConnector Association="SolarPMSModel.FK_IssueManagement_LocationMaster" />
+        <EntityTypeShape EntityType="SolarPMSModel.DesignEngineerDocument" Width="1.5" PointX="18.375" PointY="7.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.ManagerTimesheetActivity" Width="1.5" PointX="8.25" PointY="54.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.ManagerTimesheetBlockDetail" Width="1.5" PointX="8.25" PointY="62.5" />
+        <EntityTypeShape EntityType="SolarPMSModel.ManagerTimesheetSurveyDetail" Width="1.5" PointX="8.25" PointY="58.625" />
+        <EntityTypeShape EntityType="SolarPMSModel.DocumentReviewDetail" Width="1.5" PointX="20.625" PointY="9.75" />
+        <AssociationConnector Association="SolarPMSModel.FK_DocumentReviewDetails_DocumentReviewDetails" />
+        <EntityTypeShape EntityType="SolarPMSModel.DEDocumentFile" Width="1.5" PointX="20.625" PointY="6.75" />
+        <AssociationConnector Association="SolarPMSModel.FK_DEDocumentFiles_DesignEngineerDocuments" />
+        <EntityTypeShape EntityType="SolarPMSModel.DocumentReviewFile" Width="2.625" PointX="16.375" PointY="17.75" />
+        <AssociationConnector Association="SolarPMSModel.FK_DocumentReviewFiles_DocumentReviewDetails" />
+        <EntityTypeShape EntityType="SolarPMSModel.ManPowerMaster" Width="1.5" PointX="18.375" PointY="13.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.Timesheet" Width="1.5" PointX="6" PointY="27.625" />
+        <AssociationConnector Association="SolarPMSModel.FK_ManagerTimesheetActivity_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_ManagerTimesheetBlockDetails_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_ManagerTimesheetSurveyDetails_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_Timesheet_StatusMaster" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetActivity_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetApproval_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetAttachment_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetBlockDetail_Timesheet" />
+        <AssociationConnector Association="SolarPMSModel.FK_TimesheetSurveyDetail_Timesheet" />
+        <EntityTypeShape EntityType="SolarPMSModel.Material" Width="1.5" PointX="15.375" PointY="20.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.ManPowerDetail" Width="1.5" PointX="20.625" PointY="13.875" />
+        <AssociationConnector Association="SolarPMSModel.FK_ManPowerDetails_ManPowerMaster" />
+        <EntityTypeShape EntityType="SolarPMSModel.MaterialStaging" Width="1.5" PointX="17.375" PointY="20.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.OfflineTimesheet" Width="1.5" PointX="20.375" PointY="19.75" />
+        <EntityTypeShape EntityType="SolarPMSModel.OfflineManPowerDetail" Width="1.5" PointX="0.75" PointY="22.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

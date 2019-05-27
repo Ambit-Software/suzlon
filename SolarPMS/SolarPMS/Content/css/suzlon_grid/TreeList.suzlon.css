@@ -1,0 +1,178 @@
+.RadGrid_Default,.RadTreeList_suzlon,
+.rtlCEdit div.RadTreeList_suzlon {
+  border-color: #828282;
+  background: #fff4e7;
+  color: #333333; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlTable {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.3333em; }
+
+.RadGrid_Default,.TreeListToolTip_suzlon {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlHeader {
+  background-color: #ffc000;
+  background-image: linear-gradient(#ffca29, #ffc000);
+  color: #333333;
+  border-color: #cc9a00; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlHeader a {
+    color: #333333; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlHeader th {
+    border-color: #cc9a00; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlScroller {
+  border-color: #d9d9d9; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlA {
+  background-color: #ffe8cd; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlRFooter {
+  background-color: #ffc000; }
+
+.RadGrid_Default,.rtlCEdit .RadTreeList_suzlon {
+  border: 1px solid; }
+
+.RadGrid_Default,.RadTreeList_suzlon {
+  /*>>Expand/Collapse*/
+  /*<<Expand/Collapse*/
+  /*>>Editing*/
+  /*<<Editing*/
+  /*>>Sorting*/
+  /*<<Sorting*/
+  /*>>Tree Lines*/ }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlR td,
+  .RadTreeList_suzlon .rtlA td,
+  .RadTreeList_suzlon .rtlREdit td,
+  .RadTreeList_suzlon .rtlRFooter td,
+  .RadTreeList_suzlon .rtlEditForm {
+    border-color: #d9d9d9; }
+  .RadGrid_Default,.RadTreeList_suzlon
+.rtlRSel {
+    background-color: #ed7d31;
+    background-image: linear-gradient(#f19b60, #ed7d31);
+    color: #ffffff; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlRActive .rtlCF {
+    box-shadow: inset 0px 5px 5px -5px #d86313, inset 0px -5px 5px -5px #d86313, inset 5px 0px 5px -5px #d86313; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlRActive .rtlCF ~ td {
+    box-shadow: inset 0px 5px 5px -5px #d86313, inset 0px -5px 5px -5px #d86313; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlRActive .rtlCF ~ td:last-child {
+    box-shadow: inset 0px 5px 5px -5px #d86313, inset 0px -5px 5px -5px #d86313, inset -5px 0px 5px -5px #d86313; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlVBorders td.rtlL,
+  .RadTreeList_suzlon .rtlLines td.rtlL {
+    background-color: #fff4e7; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlEditForm {
+    background: #fff4e7; }
+    .RadTreeList_suzlon .rtlEditForm table {
+      font-size: 1em; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlDel,
+  .RadTreeList_suzlon .rtlAdd,
+  .RadTreeList_suzlon .rtlEdit,
+  .RadTreeList_suzlon .rtlUpdate,
+  .RadTreeList_suzlon .rtlCancel,
+  .RadTreeList_suzlon .rtlClosePopUp {
+    font-size: 1.5em;
+    border: 0 none;
+    background: none; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlCollapseIcon,
+  .RadTreeList_suzlon .rtlExpandIcon,
+  .RadTreeList_suzlon .rtlAddIcon,
+  .RadTreeList_suzlon .rtlEditIcon,
+  .RadTreeList_suzlon .rtlUpdateIcon,
+  .RadTreeList_suzlon .rtlCancelIcon,
+  .RadTreeList_suzlon .rtlDelIcon {
+    color: #333333; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlExpand,
+  .RadTreeList_suzlon .rtlCollapse {
+    font-size: 1.4em;
+    margin-left: -.425em;
+    margin-top: -.355em;
+    background-color: white;
+    background: linear-gradient(#fffffe, #ffe8cb);
+    border: 1px solid #ffd198; }
+  .RadGrid_Default,.RadTreeList_suzlon.RadTreeListRTL .rtlExpand,
+  .RadTreeList_suzlon.RadTreeListRTL .rtlCollapse {
+    margin-right: -.425em; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlCollapseIcon:before {
+    content: '\E03C'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlExpandIcon:before {
+    content: '\E03B'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlAddIcon:before {
+    content: '\E039'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlEditIcon:before {
+    content: '\E0D5'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlUpdateIcon:before {
+    content: '\E037'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlDelIcon:before,
+  .RadTreeList_suzlon .rtlCancelIcon:before,
+  .RadTreeList_suzlon .rtlClosePopUpIcon:before {
+    content: '\E038'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlSortDescIcon:before {
+    content: '\E00D';
+    margin-top: -.56em; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlSortAscIcon:before {
+    content: '\E00E'; }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlLines td.rtlL0 {
+    background-image: url("images/TreeList/rtlSingleLite.gif"); }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlLines td.rtlL1 {
+    background-image: url("images/TreeList/rtlTopLite.gif"); }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlLines td.rtlL2 {
+    background-image: url("images/TreeList/rtlMiddleLite.gif"); }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlLines td.rtlL3 {
+    background-image: url("images/TreeList/rtlBottomLite.gif"); }
+  .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell {
+    background: #ffc000;
+    color: #333333;
+    border-top: 1px solid #828282; }
+   .RadGrid_Default, .RadTreeList_suzlon .rtlPagerCell .rtlNumPart a {
+      color: #333333;
+      border-radius: 0.16667em; }
+      .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlNumPart a:hover {
+        color: #333333;
+        background-color: #008080;
+        background-image: linear-gradient(#00b3b3, #008080);
+        border-color: #aaaaaa; }
+      .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlNumPart a.rtlCurrentPage {
+        color: #333333;
+        background: #008080;
+        border: 1px solid #828282; }
+    .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlPagerButton,
+    .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlActionButton {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ffd198;
+      color: #333333;
+      background-color: #ffe8cb;
+      background-image: linear-gradient(#fffffe, #ffe8cb);
+      border-radius: 0.16667em; }
+      .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlPagerButton:hover,
+      .RadGrid_Default,.RadTreeList_suzlon .rtlPagerCell .rtlActionButton:hover {
+        border-color: #317c7c;
+        color: #333333;
+        background-color: #40a0a0;
+        background-image: linear-gradient(#57bcbc, #40a0a0); }
+
+.RadGrid_Default,.RadTreeListRTL_suzlon .rtlLines td.rtlL1 {
+  background-image: url("images/TreeList/rtlTopRTLLite.gif"); }
+
+.RadGrid_Default,.RadTreeListRTL_suzlon .rtlLines td.rtlL2 {
+  background-image: url("images/TreeList/rtlMiddleRTLLite.gif"); }
+
+.RadGrid_Default,.RadTreeListRTL_suzlon .rtlLines td.rtlL3 {
+  background-image: url("images/TreeList/rtlBottomRTLLite.gif"); }
+
+/*<<Tree Lines*/
+.RadGrid_Default,.TreeListReorderTop_suzlon,
+.RadGrid_Default,.TreeListReorderBottom_suzlon {
+  font-size: 2em;
+  color: #838383; }
+
+.RadGrid_Default,.RadTreeList_suzlon .rtlDragHandle {
+  background-image: url("images/Grid/rgDrag.gif"); }
+
+.RadGrid_Default,.TreeListToolTip_suzlon {
+  border-color: #828282;
+  background: #fff4e7;
+  color: #333333; }

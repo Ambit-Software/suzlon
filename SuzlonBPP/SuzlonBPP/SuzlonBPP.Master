@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SuzlonBPP.Master.cs" Inherits="SuzlonBPP.MasterPages.SuzlonBPP" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--Styles--%>
+    <%--<%{
+           public string applicationPath = ConfigurationManager.AppSettings["WebsiteUrl"].ToString();
+        } %>--%>
+
+    <%--Scripts--%>
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+        <%-- <link href="<%=applicationPath%>/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<%=applicationPath%>/Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="<%=applicationPath%>/Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="<%=applicationPath%>/Scripts/jquery.min.js"></script>--%>
+        <%--<script src="<%=applicationPath%>/Scripts/bootstrap.min.js"></script>--%>
+        <%--<script src="<%=applicationPath%>/Scripts/SuzlonBPP.js"></script>--%>
+
+        <link href="Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="Content/css/global.css" rel="stylesheet" type="text/css" />
+        <link href="Content/css/suzlon.css" rel="stylesheet" type="text/css" />
+        <script src="Scripts/jquery.min.js"></script>
+        <script src="Scripts/SuzlonBPP.js"></script>
+    </telerik:RadCodeBlock>
+
+    <title>Suzlon BPP</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="min-height: 94vh !important;">
+        <%-- <asp:ScriptManager ID="ScriptMgr" runat="server" />--%>
+        <%-- <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>--%>
+        <%--<telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="true" />--%>
+        <asp:ScriptManager ID="ScriptMgr" runat="server" EnablePageMethods="true" EnablePartialRendering="true" />
+        <%--<telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>--%>
+        <nav class="navbar navbar-default nav-bar-clr">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">
+                        <img src="Content/images/logo.png" class="img-responsive" />
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav ">
+
+                        <li class="dropdown">
+                            <a id="menuBankDetailUpdation" runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bank Details Updation<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li runat="server" id="menuBankDetailList"><a href="BankDetailList.aspx">Bank Detail List</a></li>
+                                <li runat="server" id="menuVendorBankDetails"><a href="BankValidator.aspx">Vendor Bank Details(Validator)</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="menuBudgetAllocation" runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Budget Allocation<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li runat="server" id="menuVerticalController"><a href="TreasuryListVertical.aspx">Vertical Controller</a></li>
+                                <li runat="server" id="menuTreasury"><a href="TreasuryList.aspx">Treasury</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="menuVendorPayment" runat="server" href="#" class="dropdown-toggle" 
+                                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vendor Payments<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li id="menuAgainstBillInitiator_Initiator" runat="server"><a href="VendorPaymentInitiator.aspx">Against/Advance Bill (Initiator)</a></li>
+                                <li id="menuAgainstBillInitiator_Aggregator" runat="server"><a href="AgainstBillApprover.aspx">Against/Advance Initiator (Aggregator)</a></li>
+                                <li id="menuFnAApprover" runat="server"><a href="FnAApprover.aspx">FnA Approver</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="menuReports" runat="server">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" >Reports<span class="caret"></a>
+                            <ul class="dropdown-menu">
+                                <li runat="server" visible="false" id="liTreasuryReport"><a href="TreasuryReport.aspx">Treasury</a></li>
+                                <li runat="server" visible="false" id="liPaymentTreasuryReport"><a href="TreasuryPaymentReport.aspx">Payment+Treasury</a></li>
+                                <li runat="server" visible="false" id="liPaymentAgainstReport"><a href="PaymentDetailReport.aspx">Payment Detail</a></li>
+                                <li runat="server" visible="false" id="liBankDetailsReport"><a href="BankDetailsReport.aspx">Bank Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a id="menuAdminConfiguration" runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin Configurations<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li id="menuUserManagement" runat="server"><a href="UserMaster.aspx">User Management</a></li>
+                                <li class="dropdown-submenu">
+                                    <a id="menuMasterManagement" runat="server" tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">Master Management</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li id="menuProfileMaster" runat="server"><a href="ProfileMaster.aspx">Profile</a></li>
+                                        <%--<li id="menuComapnyMaster" runat="server"><a href="<%=applicationPath%>/CompanyMaster.aspx">Comapny</a></li>--%>
+                                        <li id="menuVerticalMaster" runat="server"><a href="VerticalMaster.aspx">Vertical</a></li>
+                                        <li id="menuSub_VerticalMaster" runat="server"><a href="SubVerticalMaster.aspx">Sub-Vertical</a></li>
+                                        <li id="menuNatureofRequest" runat="server"><a href="NatureRequest.aspx">Nature of Request</a></li>
+                                        <li id="menuVendorMaster" runat="server"><a href="VendorMaster.aspx">Vendor</a></li>
+                                        <li id="menuVendorBankMaster" runat="server"><a href="VendorBankMaster.aspx">Vendor Bank</a></li>
+                                        <li id="menuIFSCCodeMaster" runat="server"><a href="IFSCCodeMaster.aspx">IFSC Code</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a id="menuConfiguraton" runat="server" tabindex="-1" href="#">Configurations</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li id="menuWorkFlowConfiguration" runat="server">
+                                            <a href="WorkflowConfig.aspx">Workflow Configuration</a>
+                                            <%-- <ul class="dropdown-menu">
+                                                <li><a href="workflow_config.html">Bank Details Workflow</a></li>
+                                                <li><a href="treasury_allocation.html">Treasury Allocation Work</a></li>
+                                                <li><a href="vendor_payment_workflow.html">Vendor Payment Workflow</a></li>
+                                            </ul>--%>
+                                        </li>
+                                        <li id="menuApplicationConfiguration" runat="server"><a href="ApplicationConfiguration.aspx">Application Configuration</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="">
+                            <img src="<%=Session["Photo"]%>" class="user-img img-circle" /></span>
+                            <asp:Label runat="server" ID="lblUserName"></asp:Label><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ChangePassword.aspx">Change Password</a></li>
+                                <li>
+                                    <asp:LinkButton runat="server" ID="LinkButton1" OnClick="lnlLogout_Click" Text="Logout" CausesValidation="false" /></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <!-- End of menu button-->
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div style="padding: 10px; margin-top: 50px;"></div>
+        </asp:ContentPlaceHolder>
+
+
+
+    </form>
+    <div class="footer padding-tb-10">
+        <p class="text-center margin-0 heading">Suzlon Cash & Bank Application &copy; 2016, All Rights Reserved.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.RadDataForm_RadGrid_Default {
+  font: 12px/16px "Segoe UI", Arial, Helvetica, sans-serif !important;
+  color: #333333 !important;
+  overflow: hidden !important; }
+  .RadDataForm_RadGrid_Default .rdfLegend,
+  .RadDataForm_RadGrid_Default .rdfBorders {
+    border-color: #828282 !important; }
+  .RadDataForm_RadGrid_Default .rdfHr,
+  .RadDataForm_RadGrid_Default .rdfFieldHint {
+    color: #b3b3b3 !important; }
+  .RadDataForm_RadGrid_Default .rdfLegend {
+    font-size: 1.17em !important; }
+  .RadDataForm_RadGrid_Default .rdfFieldHint {
+    padding: 0 0 0 0.42em !important; }
+  .RadDataForm_RadGrid_Default .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0 !important; }
+  .RadDataForm_RadGrid_Default .rdfLabel.rdfBlock {
+    padding: 0 0 0.17em 0 !important; }
+  .RadDataForm_RadGrid_Default .rdfPager {
+    margin-top: 1.25em !important; }
+    .RadDataForm_RadGrid_Default .rdfPager .rdfFirst,
+    .RadDataForm_RadGrid_Default .rdfPager .rdfPrev,
+    .RadDataForm_RadGrid_Default .rdfPager .rdfNext,
+    .RadDataForm_RadGrid_Default .rdfPager .rdfLast {
+      width: 25px !important;
+      height: 25px !important;
+      background: transparent no-repeat url(skin-image-url("DataForm", "sprite.png")) !important;
+      border: none !important; }
+    .RadDataForm_RadGrid_Default .rdfPager .rdfFirst {
+      background-position: 0 0 !important; }
+      .RadDataForm_RadGrid_Default .rdfPager .rdfFirst:hover {
+        background-position: 0 -50px !important; }
+    .RadDataForm_RadGrid_Default .rdfPager .rdfPrev {
+      background-position: 0 -100px !important; }
+      .RadDataForm_RadGrid_Default .rdfPager .rdfPrev:hover {
+        background-position: 0 -150px !important; }
+    .RadDataForm_RadGrid_Default .rdfPager .rdfNext {
+      background-position: 0 -200px !important; }
+      .RadDataForm_RadGrid_Default .rdfPager .rdfNext:hover {
+        background-position: 0 -250px !important; }
+    .RadDataForm_RadGrid_Default .rdfPager .rdfLast {
+      background-position: 0 -300px !important; }
+      .RadDataForm_RadGrid_Default .rdfPager .rdfLast:hover {
+        background-position: 0 -350px !important; }

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4dfeb6998a2c4478aa908fdab271c877" Name="Diagram1" ZoomLevel="59">
+        <EntityTypeShape EntityType="SuzlonBPPModel.AccountType" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.AddandomDetail" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.AddandomWorkflowStatu" Width="1.5" PointX="0.75" PointY="1.875" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.ApplicationConfiguration" Width="1.5" PointX="5.25" PointY="57.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankComment" Width="1.5" PointX="8.25" PointY="55.625" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankDetail" Width="1.5" PointX="10.5" PointY="77.375" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankDetailAudit" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankDetailHistory" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankWorkflow" Width="1.5" PointX="13.5" PointY="77.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.BankWorkflowStatu" Width="1.5" PointX="8.25" PointY="84.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.CompanyMaster" Width="1.5" PointX="5.25" PointY="91.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.ErrorLog" Width="1.5" PointX="5.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.FileUpload" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.IFSCCodeMaster" Width="1.5" PointX="5.25" PointY="88" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.Menu" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.MenuAccess" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.NatureRequestMaster" Width="1.5" PointX="5.25" PointY="41.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentDetailAdvance" Width="1.5" PointX="15.75" PointY="78.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentDetailAdvanceTxn" Width="1.5" PointX="5.25" PointY="52.625" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentDetailAgainstBill" Width="1.5" PointX="15.75" PointY="73.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentDetailAgainstBillTxn" Width="1.5" PointX="8.25" PointY="47.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentWorkflow" Width="1.5" PointX="7.5" PointY="76.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentWorkflowStatu" Width="1.5" PointX="3" PointY="48.25" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.ProfileMaster" Width="1.5" PointX="0.75" PointY="48.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.SAPAdvancePayment" Width="1.5" PointX="13.5" PointY="85.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.SAPAgainstBillPayment" Width="1.5" PointX="6" PointY="34" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.StatusMaster" Width="1.5" PointX="0.75" PointY="44.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.SubVerticalMaster" Width="1.5" PointX="10.5" PointY="71.875" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryComment" Width="1.5" PointX="8.25" PointY="51.625" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryNatureRequestDetail" Width="2" PointX="7.875" PointY="3.25" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryWorkflow" Width="1.5" PointX="15.75" PointY="83.5" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryWorkflowStatu" Width="1.5" PointX="3.75" PointY="65.375" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.User" Width="1.5" PointX="3" PointY="51.875" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.VendorBankMaster" Width="1.5" PointX="5.25" PointY="94.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.VendorMaster" Width="1.5" PointX="5.25" PointY="44.625" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.VerticalMaster" Width="1.5" PointX="5.25" PointY="104.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.WorkflowAudit" Width="1.5" PointX="12.75" PointY="73.125" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.WorkflowConfiguration" Width="1.5" PointX="5.25" PointY="100.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.VendorBankMaster_Staging" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.VendorMaster_Staging" Width="1.5" PointX="10.75" PointY="0.75" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_AddandomDetail_AddandomWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_ApplicationConfiguration_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_ApplicationConfiguration_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankComment_BankDetail" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankComment_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankComment_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankDetail_BankWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankDetail_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankDetail_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankDetail_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankDetail_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankWorkflow_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankWorkflow_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankWorkflow_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_BankWorkflow_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_CompanyMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_CompanyMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_IFSCCodeMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_IFSCCodeMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_NatureRequestMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_NatureRequestMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_PaymentWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_SAPAdvancePayment" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_StatusMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvanceTxn_PaymentWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvanceTxn_ProfileMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvanceTxn_SAPAdvancePayment" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvanceTxn_StatusMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvanceTxn_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_PaymentWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_SAPAgainstBillPayment" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_StatusMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_PaymentDetailAgainstBillTxn" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_PaymentWorkflowStatus" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_PaymentWorkflowStatus1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_ProfileMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_StatusMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBillTxn_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflow_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflow_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflow_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflow_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflowStatus_ProfileMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentWorkflowStatus_StatusMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_User_ProfileMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowAudit_ProfileMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_SubVerticalMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_SubVerticalMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_SubVerticalMaster_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryWorkflow_SubVerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowAudit_WorkflowAudit" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalControllerComment_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalControllerComment_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryWorkflow_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryWorkflow_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryWorkflow_VerticalMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VendorBankMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VendorBankMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VendorMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VendorMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalMaster_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalMaster_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowAudit_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowConfiguration_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowConfiguration_User1" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_WorkflowAudit_WorkflowConfiguration" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryDetail" Width="1.5" PointX="6" PointY="63.75" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalControllerComment_VerticalController" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_VerticalControllerDetail_TreasuryWorkflowStatus" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.TreasuryBudgetUtilisation" Width="1.5" PointX="11.25" PointY="53.25" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryBudgetUtilisation_NatureRequestMaster" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_TreasuryBudgetUtilisation_TreasuryDetail" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAdvance_Profile" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentDetailAgainstBill_Profile" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.AddendumComment" Width="1.5" PointX="11.375" PointY="5.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentAllocationDetail" Width="1.5" PointX="8.25" PointY="59.875" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentAllocationDetails_TreasuryDetail" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentAllocationDetails_User" />
+        <AssociationConnector Association="SuzlonBPPModel.FK_PaymentAllocationDetails_User1" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PaymentInitiationMail" Width="1.5" PointX="5.375" PointY="10.75" />
+        <EntityTypeShape EntityType="SuzlonBPPModel.PayReverseReason" Width="1.5" PointX="11.375" PointY="9.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

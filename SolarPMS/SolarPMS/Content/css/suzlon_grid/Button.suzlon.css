@@ -1,0 +1,79 @@
+.RadButton_Default.rbButton,
+.RadButton_Default .rbSplitPart {
+  border-color: #ffd198 !important;
+  color: #333333 !important;
+  background-color: #ffe8cb !important;
+  background-image: linear-gradient(#fffffe, #ffe8cb) !important; }
+
+.RadButton_Default.rbButton.rbHovered,
+.RadButton_Default .rbSplitPart.rbHovered {
+  border-color: #317c7c !important;
+  color: #333333 !important;
+  background-color: #40a0a0 !important;
+  background-image: linear-gradient(#57bcbc, #40a0a0) !important; }
+
+.RadButton_Default.rbButton:focus {
+  box-shadow: inset 0 0 5px rgba(216, 99, 19, 0.5) !important; }
+
+.RadButton_Default.rbButton.rbSelected,
+.RadButton_Default.rbButton.rbToggled,
+.RadButton_Default.rbButton.rbSelected .rbSplitPart {
+  border-color: #d86313 !important;
+  color: #ffffff !important;
+  background-color: #ed7d31 !important;
+  background-image: none !important; }
+
+.RadButton_Default .rbSplitPartRight.rbHovered {
+  border-left-color: #317c7c !important; }
+
+.RadButton_Default .rbSplitPartRight.rbSelected {
+  border-left-color: #d86313 !important; }
+
+.RadButton_Default .rbSplitPartLeft.rbHovered {
+  border-right-color: #317c7c !important; }
+
+.RadButton_Default .rbSplitPartLeft.rbSelected {
+  border-right-color: #d86313 !important; }
+
+.RadButton_Default.rbToggleButton .rbIcon,
+.RadButton_Default.rbCheckBox .rbIcon,
+.RadButton_Default.rbRadioButton .rbIcon,
+.RadButton_Default.rbToggleButton .rbText,
+.RadButton_Default.rbCheckBox .rbText,
+.RadButton_Default.rbRadioButton .rbText {
+  color: #333333 !important; }
+
+.RadButton_Default.rbToggleButton.rbHovered .rbIcon,
+.RadButton_Default.rbCheckBox.rbHovered .rbIcon,
+.RadButton_Default.rbRadioButton.rbHovered .rbIcon,
+.RadButton_Default.rbToggleButton.rbSelected .rbIcon,
+.RadButton_Default.rbCheckBox.rbSelected .rbIcon,
+.RadButton_Default.rbRadioButton.rbSelected .rbIcon,
+.RadButton_Default.rbToggleButton.rbHovered .rbText,
+.RadButton_Default.rbCheckBox.rbHovered .rbText,
+.RadButton_Default.rbRadioButton.rbHovered .rbText,
+.RadButton_Default.rbToggleButton.rbSelected .rbText,
+.RadButton_Default.rbCheckBox.rbSelected .rbText,
+.RadButton_Default.rbRadioButton.rbSelected .rbText,
+.RadButton_Default.rbCheckBox.rbHovered .rbToggleCheckboxChecked + .rbText,
+.RadButton_Default.rbRadioButton.rbHovered .rbToggleRadioChecked + .rbText {
+  color: #333333 !important; }
+
+.RadButton_Default.rbToggleButton.rbHovered.rbSelected .rbIcon,
+.RadButton_Default.rbCheckBox.rbHovered.rbSelected .rbIcon,
+.RadButton_Default.rbRadioButton.rbHovered.rbSelected .rbIcon,
+.RadButton_Default.rbToggleButton.rbHovered.rbSelected .rbText,
+.RadButton_Default.rbCheckBox.rbHovered.rbSelected .rbText,
+.RadButton_Default.rbRadioButton.rbHovered.rbSelected .rbText,
+.RadButton_Default.rbCheckBox .rbToggleCheckboxChecked,
+.RadButton_Default.rbCheckBox .rbToggleCheckboxChecked + .rbText,
+.RadButton_Default.rbRadioButton .rbToggleRadioChecked,
+.RadButton_Default.rbRadioButton .rbToggleRadioChecked + .rbText {
+  color: #333333 !important; }
+
+.RadButton_Default.rbButton.rbRtl .rbSplitPart,
+.RadButton_Default.rbButton.rbRtl .rbSplitPart.rbHovered {
+  border-right-color: #ffd198 !important; }
+
+.RadButton_Default.rbButton.rbRtl .rbSplitPart.rbSelected {
+  border-right-color: #d86313 !important; }

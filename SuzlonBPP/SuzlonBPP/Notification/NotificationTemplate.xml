@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DS xmlns="NotificationSchema">
+  
+  <Notification>
+    <Id>1</Id>
+    <Subject>{0} Budget allocation request has been created.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0}  has created the Budget Allocation request {1} and has come for your approval.
+      
+      Requested Amount: {2} INR.      
+      
+      Click the link below to view the details
+      {3}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+      
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>2</Id>
+    <Subject>{0} Approved! : Budget allocation request has been Approved by {1}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0}  Budget Allocation Request Approved By {1}.
+
+      Requested Amount: {2} INR.
+      
+      Approved Amount: {3} INR.
+
+      Click the link below to view the details
+      {4}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+
+  <Notification>
+    <Id>3</Id>
+    <Subject>{0} Rejected! : Budget allocation request has been rejected by {1}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} Budget Allocation Request Rejected By {1}.
+      
+      Rejection Comments: {2}
+
+      Click the link below to view the details
+      {3}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>4</Id>
+    <Subject>{0} Rework! : Request Details rework has been assigned by {1}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} Request Details has come for rework.
+
+      Rework Comments: {1}
+
+      Click the link below to view the details
+      {2}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>5</Id>
+    <Subject> Addendum Request has been created against "{0}" Budget allocation request.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} has created the Addendum request against {1} Budget allocation request and has come for your approval.    
+
+      Click the link below to view the details
+      {2}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+  
+  <Notification>
+    <Id>6</Id>
+    <Subject>Addendum Request against {0} Approved!.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      Addendum Request against {0} Budget Allocation Request Approved By {1}.
+      
+      Requested Amount: {2} INR.
+
+      Approved Amount: {3} INR.
+
+      Click the link below to view the details
+      {4}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>7</Id>
+    <Subject>Addendum Request against {0} Rejected!.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      Addendum Request against {0} Budget Allocation Request Rejected By {1}.
+
+      Rejection Comments: {2}.     
+
+      Click the link below to view the details
+      {3}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>8</Id>
+    <Subject>Addendum Request against {0} Rework!.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      Addendum Request against {0} Request Details has come for rework.
+
+      Rework Comments: {1}.
+
+      Click the link below to view the details
+      {2}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+  
+  <Notification>
+    <Id>9</Id>
+    <Subject>{0} has submitted the Payment Request {1} {2} for {3} {4}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0}  has submitted the {1} Payment request {2} for {3} {4} and has come for your approval.
+
+      Requested Amount ={5}
+
+      Click the link below to view the details
+      {6}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>10</Id>
+    <Subject>{0} {1} Payment Request {2} has been Approved By {3}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} {1} Payment Details {2} is Approved By {3}.and now has come for your approval.
+
+      Requested Amount ={4}
+      
+      Approved Amount={5}
+      
+      Click the link below to view the details
+      {6}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>11</Id>
+    <Subject>{0} {1} Payment Request {2} is rejected by {3}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} Payment Request {1} is rejected by {2}
+
+      Rejection Comments:{3}
+
+      Click the link below to view the details
+      {4}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+
+  <Notification>
+    <Id>12</Id>
+    <Subject>{0} {1} Payment Request {2} correction has been assigned by {3}.</Subject>
+    <MailContent>
+      Dear Sir/Madam,
+
+      {0} {1} Payment Request {2} has come for Correction.
+
+      Correction  Comments:{3}
+
+      Click the link below to view the details
+      {4}.
+
+      Thanks &amp; Regards,
+      Support Team
+      Bank Payment Portal
+
+    </MailContent>
+    <SendTo>USer,AssignedTo,Manager</SendTo>
+  </Notification>
+  
+</DS>

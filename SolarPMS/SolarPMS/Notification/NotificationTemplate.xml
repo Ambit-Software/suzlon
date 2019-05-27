@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DS xmlns="NotificationSchema">
+   <Notification>
+      <Id>1</Id>
+      <Subject>Issue {0} Assigned</Subject>
+      <MailContent>Dear Sir/Madam,
+
+	             The User {0} has been assigned Issue '{1}' - '{2}' against activity '{3}'.\n
+		     Click here to see more details URL: {4}
+		
+		
+		    Thank You
+	        
+		
+	</MailContent>
+   <SendTo>USer,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>2</Id>
+      <Subject>Issue Resolved</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		     The User {0} has resolved Issue '{1}' - '{2}' against activity '{3}'.
+		     Click to see more details URL: {4}
+		     
+                   Thank You
+      </MailContent>
+      <SendTo>User,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>3</Id>
+      <Subject>Issue {0} Closed</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		     The User '{0}' has closed Issue '{1}' - '{2}' against activity '{3}'.
+ 		     Click to see more details URL: {4}
+		
+                   Thank You
+      
+     </MailContent>
+     <SendTo>User,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>4</Id>
+      <Subject>Issue {0} Assigned</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		     You have been assigned Issue '{1}' - '{2}' by User '{0}'.
+	             Click to see more details URL: {3}
+
+		    Thank You
+
+      </MailContent>
+      <SendTo>User,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>5</Id>
+      <Subject>Issue Resolved</Subject>
+      <MailContent>Dear Sir/Madam, 
+
+  		     The User '{0}' has resolved Issue '{1}' - '{2}'.
+		     Click to see more details URL: {3}
+
+		   Thank You
+      </MailContent>
+    <SendTo>User,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>6</Id>
+      <Subject>Issue '{0}' Closed</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		    The User '{0}' has closed Issue '{1}' - '{2}'.
+  	 	    Click to see more details URL: {3}
+                 
+                   Thank You
+     </MailContent>
+     <SendTo>User,AssignedTo,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>7</Id>
+      <Subject>Quality Reject Alert</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		    The Activity '{0}' is rejected due to '{1}'.
+  	 	    Click to see more details URL: {2}
+                   
+                   Thank You
+      </MailContent>
+   <SendTo>User, Design Manager,Site Functional Manager,Co-ordinator</SendTo>
+   </Notification>
+   <Notification>
+      <Id>8</Id>
+      <Subject>Quality Issue Resolved</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		    Activity '{0}' is resolved by '{1}'.
+ 	 	    Click to see more details - {2}
+
+		  Thank You
+      </MailContent>
+   <SendTo>User, Design Manager,Site Functional Manager,Site Quality Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>9</Id>
+      <Subject>Quality Issue Closed</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		    Activity '{0}' is closed.
+ 	 	    Click to see more details - {1}
+                 
+                  Thank You
+      </MailContent>
+   <SendTo>User, Design Manager,Site Functional Manager,Site Quality Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>10</Id>
+      <Subject>Activity Rejection</Subject>
+      <MailContent>Dear Sir/Madam,
+		  
+                    Activity '{0}' is rejected by Manager.
+	 	    Click to see more details - {1}
+		
+                   Thank You
+      </MailContent>
+   <SendTo>USer</SendTo>
+   </Notification>
+   <Notification>
+      <Id>11</Id>
+      <Subject>New user creation</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		     The User '{0}' has been added to database. The Authentication details are as below.		  	
+	 	     URL: {1}login.aspx
+	             User Name : {2}
+	             Password : {3}
+    
+    		   Thank You            
+     </MailContent>
+     <SendTo>User,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>12</Id>
+      <Subject>User deactivation</Subject>
+      <MailContent>Dear Sir/Madam,
+
+		     User '{0}' has been deactivated, he/she will no longer be able to user Application.
+  
+		   Thank You
+      </MailContent>
+      <SendTo>User,Manager</SendTo>
+   </Notification>
+   <Notification>
+      <Id>13</Id>
+      <Subject>Work Allocation</Subject>
+      <MailContent>
+                 Dear Sir/Madam,
+
+		   User {0} has been allocated for Network '{1}' for Site '{2}'.
+	 	   Click to see more details - {3}.
+
+		 Thank You	
+      </MailContent>
+      <SendTo>USer</SendTo>
+   </Notification>
+   <Notification>
+      <Id>14</Id>
+      <Subject>Work Removed</Subject>
+      <MailContent>
+                 Dear Sir/Madam,
+
+		   User {0} has been removed from Network '{1}' for Site '{2}'.
+	 	   Click to see more details - {3}.
+
+		 Thank You	
+      </MailContent>
+      <SendTo>USer</SendTo>
+   </Notification>
+    <Notification>
+      <Id>15</Id>
+      <Subject>Issue '{0}' Resolution</Subject>
+      <MailContent>
+                 Dear Sir/Madam,
+
+		   The Issue '{0}' and '{1}' is unresolved for more than '{2}' day(s).
+	 	   Click to see more details - {3}.
+
+		 Thank You	
+      </MailContent>
+      <SendTo>State Project Head,Co-ordinator</SendTo>
+   </Notification>
+   <Notification>
+      <Id>16</Id>
+      <Subject>Issue '{0}' Closure</Subject>
+      <MailContent>
+                  Dear Sir/Madam,
+		  
+		  The Issue '{0}' and '{1}' is not closed for more than '{2}' day(s).
+		  Click to see more details - {3}
+
+		 Thank You	
+      </MailContent>
+      <SendTo>State Project Head,Co-ordinator</SendTo>
+   </Notification>
+   <Notification>
+      <Id>17</Id>
+      <Subject>Quality Issue not Resolved </Subject>
+      <MailContent>
+                  Dear Sir/Madam,
+		  
+		  Activity '{0}' is not resolved by '{1}' for more than {2} day(s).
+		  Click to see more details - {3}
+
+		 Thank You	
+      </MailContent>
+      <SendTo>State Project Head,Co-ordinator</SendTo>
+   </Notification>
+   <Notification>
+      <Id>18</Id>
+      <Subject>Activity LT more than Planned</Subject>
+      <MailContent>
+                  Dear Sir/Madam,
+		  
+		  Activity '{0}' on Site has taken more Lead Time than Planned.
+		  Click to see more details - {1}
+
+		 Thank You	
+      </MailContent>
+      <SendTo>State Project Head,Co-ordinator</SendTo>
+   </Notification>
+ 
+	  <Notification>
+      <Id>19</Id>
+      <Subject>Design Engineer Document uploaded</Subject>
+      <MailContent>
+                  Dear Sir/Madam,
+		  
+		  A new document is available for your review for activity : '{0}' for site '{1}'.
+		  Click to see more details - {2}
+
+		  This is auto generated email. Please don't reply. 
+
+		  Regards,
+  		  Suzlon
+
+      </MailContent>
+      <SendTo></SendTo>
+   </Notification>
+</DS>

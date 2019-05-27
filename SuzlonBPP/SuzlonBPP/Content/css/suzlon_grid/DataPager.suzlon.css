@@ -1,0 +1,33 @@
+.RadDataPager_RadGrid_Default {
+  background: #ffc000 !important;
+  color: #333333 !important;
+  border: 1px solid #cc9a00 !important;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important; }
+  .RadDataPager_RadGrid_Default .rdpNumPart a {
+    color: #333333 !important;
+    border-radius: 0.16667em !important; }
+    .RadDataPager_RadGrid_Default .rdpNumPart a:hover {
+      color: #000000 !important;
+      background-color: #008080 !important;
+      background-image: none !important;
+      border-color: #008080 !important; }
+    .RadDataPager_RadGrid_Default .rdpNumPart a.rdpCurrentPage {
+      color: #333333 !important;
+      background: #008080 !important;
+      border: 1px solid #828282 !important; }
+  .RadDataPager_RadGrid_Default .rdpPagerButton,
+  .RadDataPager_RadGrid_Default .rdpActionButton {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ffddb4 !important;
+    color: #333333 !important;
+    background-color: #fff4e7 !important;
+    background-image:none !important;
+    border-radius: 0.16667em !important; }
+    .RadDataPager_RadGrid_Default .rdpPagerButton:hover,
+    .RadDataPager_RadGrid_Default .rdpActionButton:hover {
+      border-color: #004d4d !important;
+      color: #ffffff !important;
+      background-color: #008080 !important;
+      background-image: none !important; }
